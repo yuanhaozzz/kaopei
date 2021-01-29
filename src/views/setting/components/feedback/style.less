@@ -1,0 +1,97 @@
+.feedback {
+  height: 100%;
+  background: #F7F8FD;
+  overflow: auto;
+  .question-wrapper {
+    width: 100%;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    background-color: #fff;
+    h3 {
+      font-size: 36px;
+      padding: 40px 40px 0 40px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 600;
+      color: #000000;
+    }
+    .question-list {
+      font-size: 28px;
+      padding: 40px 40px 0 40px;
+      font-weight: 400;
+      color: #121212;
+      line-height: 40px;
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        li {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 200px;
+          height: 70px;
+          margin: 10px;
+          background-color: #F1F1F1;
+          border-radius: 35px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        .current {
+          background-color: #F1BC1A;
+        }
+      }
+    }
+
+    .question-area {
+      width: 90%;
+      margin: 10px auto;
+      textarea {
+        margin-top: 20px;
+        padding: 3%;
+        width: 94%;
+        height: 405px;
+        background:#F7F7F8;
+        border-radius: 8px;
+        border: none;
+        outline: none;
+      }
+    }
+    .upload-img {
+      position: relative;
+      margin-left: 40px;
+      width: 160px;
+      height: 160px;
+      background-color: #F7F7F8;
+      border-radius: 14px;
+      color: #BEBEBF;
+      font-size: 26px;
+      img {
+        position: absolute;
+        left: 0;
+        top: 25px;
+        right: 0;
+        margin: auto;
+        width: 66px;
+        height: 66px;
+      }
+      p {
+        position: absolute;
+        left: 0;
+        bottom: 20px;
+        right: 0;
+        margin: auto;
+        text-align: center;
+      }
+    }
+  }
+  .form-button{
+    width: 570px;
+    height: 88px;
+    background: linear-gradient(90deg, #31578F 0%, #162C56 100%);
+    border-radius: 14px;
+    font-size: 34px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin: 120px auto 0;
+}
+}

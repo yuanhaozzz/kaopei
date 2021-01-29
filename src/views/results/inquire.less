@@ -1,0 +1,83 @@
+.inquire {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+
+  .card-box {
+    position: relative;
+    width: 650px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    padding: 60px 24px 60px 46px;
+    border-left-width: 10px;
+    border-left-style: solid;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 14px;
+    box-sizing: border-box;
+
+    .card-left {
+      width: 0;
+      flex: 1;
+
+      .exam-name {
+        position: absolute;
+        top: -23px;
+        left: 24px;
+        display: inline;
+        padding: 4px 38px;
+        text-align: center;
+        color: #ffffff;
+        font-size: 28px;
+        border-radius: 22px;
+      }
+
+      .exam-title {
+        width: 100%;
+        color: #999999;
+        font-size: 28px;
+        font-weight: 500;
+      }
+
+      .exam-url {
+        width: 100%;
+        color: #162C56;
+        font-size: 28px;
+        margin: 24px 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .exam-tip {
+        color: #999999;
+        font-size: 20px;
+      }
+    }
+
+    .card-right {
+      width: 126px;
+      height: 144px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #162C56;
+      font-size: 24px;
+      border-left: 2px solid;
+      border-image: linear-gradient(#ffffff, #D4D4D4, #ffffff) 6;
+      box-sizing: border-box;
+      .card-analyse-icon {
+        width: 66px;
+        >img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

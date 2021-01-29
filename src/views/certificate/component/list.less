@@ -1,0 +1,142 @@
+.exam {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  .exam-list {
+    flex: 1 1;
+    padding-top: 20px;
+    overflow-y: auto;
+    box-sizing: border-box;
+
+    .exam-item {
+      width: 100%;
+      margin-bottom: 30px;
+      display: flex;
+      align-items: center;
+
+      .exam-item-radio {
+        width: 80px;
+        position: relative;
+      }
+
+      .exam-item-con {
+        flex: 1 1;
+        background: #ffffff;
+      }
+
+      .exam-item-title {
+        padding: 22px 40px;
+        box-sizing: border-box;
+
+        .item-title-name {
+          font-size: 34px;
+        }
+
+        .item-title-exam-status {
+          color: #C55B00;
+          font-size: 24px;
+        }
+      }
+
+      .exam-item-info {
+        padding: 22px 40px;
+        border-top: 1px solid #F2F2F2;
+        border-bottom: 1px solid #F2F2F2;
+        box-sizing: border-box;
+
+        .item-info-item {
+          width: 100%;
+          margin-bottom: 20px;
+
+          .info-item-label {
+            width: 96px;
+            margin-right: 20px;
+            color: #B8B8B8;
+            font-size: 24px;
+          }
+
+          .info-item-text {
+            font-size: 28px;
+          }
+        }
+      }
+
+      .exam-item-footer {
+        padding: 22px 40px;
+        color: #162C56;
+        font-weight: 500;
+        box-sizing: border-box;
+
+        .item-footer-results {
+          font-size: 28px;
+        }
+
+        .item-footer-check {
+          width: 200px;
+          text-align: center;
+          font-size: 32px;
+          padding: 4px 0;
+          border-radius: 50px;
+          border: 1px solid #162C56;
+        }
+      }
+    }
+  }
+
+  .exam-operate {
+    width: 100%;
+    height: 156px;
+    box-sizing: border-box;
+
+    .operate-btn {
+      width: 650px;
+      padding: 20px 0;
+      color: #ffffff;
+      font-size: 34px;
+      font-weight: 500;
+      text-align: center;
+      background: linear-gradient(90deg, #31578F 0%, #162C56 100%);
+      border-radius: 14px;
+    }
+
+  }
+
+  .exam-cancel {
+    position: relative;
+    width: 100%;
+    height: 156px;
+    background: #ffffff;
+    box-shadow: 0px -3px 10px 0px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+
+    .btn-box {
+      position: absolute;
+      top: 27px;
+      right: 40px;
+      width: 435px;
+      font-size: 32px;
+
+      .btn-style {
+        width: 200px;
+        font-weight: 500;
+        text-align: center;
+        padding: 2px 0;
+        border-radius: 50px;
+      }
+
+      .cancel {
+        color: #B8B8B8;
+        border: 1px solid #B8B8B8;
+      }
+
+      .send {
+        color: #162C56;
+        border: 1px solid #162C56;
+      }
+    }
+  }
+}

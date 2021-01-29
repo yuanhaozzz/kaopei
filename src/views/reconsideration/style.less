@@ -1,0 +1,112 @@
+.reconsideration-wrapper{
+    height: 100%;
+    overflow-y: scroll;
+    background: #F7F8FD;
+    padding-bottom: 500px;
+    .layer{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 70%;
+        z-index: 100;
+    }
+    .reconsideration-form:nth-last-child(2){
+        margin-bottom: 200px !important;
+    }
+    .reconsideration-form:first-child{
+        margin-top: 20px;
+    }
+    .reconsideration-form{
+        margin-top: 32px;
+        background-color: #fff;
+        padding: 0 20px;
+        box-sizing: border-box;
+        li{
+            min-height: 90px;
+            border-bottom: 1px solid #F2F2F2;
+            position: relative;
+            .form-title{
+                height: 90px;
+                line-height: 90px;
+            }
+            .rich-text{
+                padding:10px 30px;
+            }
+            h5{
+                width: 150px;
+                text-align: right;
+                margin-right: 34px;
+                font-size: 28px;
+                color: #666666;
+            }
+            input{
+                flex:1;
+                height: 64px;
+                border: none;
+                outline: none;
+                font-size: 28px;
+                // color: #B2B2B2;
+            }
+            a{
+                color: #B2B2B2;
+                text-decoration:none
+
+            }
+            input:disabled{  
+                opacity: 1;
+                background-color: #fff;
+            }
+            textarea:disabled{  
+                opacity: 1;
+                background-color: #fff;
+            }
+            input::-webkit-input-placeholder {
+                color: #B2B2B2;
+            }
+            textarea{
+                width: 100%;
+                border: none;
+                resize:none;
+                min-height: 200px;
+                height: 100%;
+                outline: none;
+                padding-bottom: 30px;
+                padding: 20px;
+            }
+            .row-code{
+                font-size: 28px;
+                color: #162C56;
+                height: 64px;
+                border-left: 1px solid #C4C4C4;
+                box-sizing: border-box;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            .reconsideration-font{
+                font-size: 28px;
+                color: #B2B2B2;
+            }
+        }
+        li:last-child{
+            border-bottom: none;
+        }
+    }
+  
+
+    .reconsideration-form-submit{
+        width: 590px;
+        height: 88px;
+        background: linear-gradient(90deg, #31578F 0%, #162C56 100%);
+        border-radius: 14px;
+        position: fixed;
+        bottom: 56px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 34px;
+        color: #FFFFFF;
+        font-weight: 600;
+    }
+}

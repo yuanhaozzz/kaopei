@@ -1,0 +1,120 @@
+.reconsider {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  overflow-y: auto;
+  box-sizing: border-box;
+
+  .reconsider-exam-card {
+    position: relative;
+    width: 650px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    padding: 60px 24px 60px 46px;
+    border-left-width: 10px;
+    border-left-style: solid;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 14px;
+    box-sizing: border-box;
+
+    .card-left {
+      width: 100%;
+
+      .exam-name {
+        position: absolute;
+        top: -23px;
+        left: 24px;
+        display: inline;
+        padding: 4px 38px;
+        text-align: center;
+        color: #ffffff;
+        font-size: 28px;
+        border-radius: 22px;
+      }
+
+      .exam-title {
+        width: 100%;
+        color: #999999;
+        font-size: 28px;
+        font-weight: 500;
+      }
+
+      .exam-url {
+        width: 100%;
+        color: #162C56;
+        font-size: 28px;
+        margin: 24px 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .exam-tip {
+        color: #999999;
+        font-size: 20px;
+      }
+
+      .exam-sign_up {
+        margin-bottom: 20px;
+        color: #999999;
+        font-size: 28px;
+
+        .exam-sign_up_time {
+          padding-left: 10px;
+          color: #000000;
+        }
+      }
+    }
+
+    .reconsider-explain {
+      width: 44px;
+      height: 44px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+
+      >img {
+        width: 100%;
+      }
+    }
+  }
+
+  .reconsider-explain-info {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    box-sizing: border-box;
+
+    .reconsider-explain-info-box {
+      flex: 1 1;
+      padding: 30px;
+      font-size: 36px !important;
+      box-sizing: border-box;
+      overflow-y: auto;
+    }
+
+    .reconsider-explain-info-close {
+      width: 100%;
+      padding: 10px 0;
+
+      .close-btn {
+        width: 590px;
+        margin: 0 auto;
+        padding: 20px 0;
+        font-size: 34px;
+        color: #ffffff;
+        text-align: center;
+        font-size: 600;
+        background: linear-gradient(90deg, #31578F 0%, #162C56 100%);
+        border-radius: 14px;
+      }
+    }
+  }
+}

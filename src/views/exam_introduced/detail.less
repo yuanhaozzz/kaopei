@@ -1,0 +1,99 @@
+.exam-introduced-detail-wrapper{
+    height: 100%;
+    background: #F7F8FD;
+    overflow-y: scroll;
+    // padding: 19px 50px 0;
+    box-sizing: border-box;
+    .detail-title{
+        color: #000000;
+        text-align: center;
+        background-color: #fff;
+        height: 88px;
+        position: relative;
+        h1{
+            font-size: 36px;
+            height: 88px;
+            padding: 0 20px;
+        }
+        img{
+            width: 44px;
+            margin-left: 5px;
+            transform: rotate(180deg);
+            transition: all .2s;
+        }
+        .action{
+            transform: rotate(0);
+        }
+    }
+    .detail-tab{
+        height: 88px;
+        background-color: #fff;
+        margin-bottom: 32px;
+        h2{
+            font-size: 28px;
+            color: #999999;
+            font-weight: 600;
+        }
+        .action{
+            font-size: 36px;
+            color: #162C56;
+        }
+    }
+    .detail-content-item{
+        box-sizing: border-box;
+
+        .detail-content-item-news{
+            li{
+                background: #FFFFFF;
+                padding: 32px 50px;
+                margin-bottom: 20px;
+                position: relative;
+                h3{
+                    font-size: 32px;
+                    color: #000000;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                    white-space: nowrap; 
+                    overflow: hidden;
+                    text-overflow:ellipsis;
+                }
+                .item-img{
+                    height: 246px;
+                    overflow: hidden;
+                    align-items: flex-start;
+                    margin-bottom: 18px;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .item-about{
+                    font-size: 26px;
+                    color: #000000;
+                    margin-bottom: 30px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+
+                }
+                .item-bottom{
+                    font-size: 22px;
+                    span{
+                        color: #999999;
+                    }
+                    button{
+                        color: #162C56;
+                    }
+                }
+                .item-hot{
+                    width: 44px;
+                    position: absolute;
+                    left: 10px;
+                    top: 0;
+                }
+            }
+        }
+    }
+
+}

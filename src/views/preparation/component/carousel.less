@@ -1,0 +1,111 @@
+.carouser-contain {
+  width: 750px;
+  overflow: hidden;
+  user-select: none;
+
+  .contain-main {
+    display: flex;
+    transition: transform .3s linear;
+
+    .carousel-item {
+      height: 100%;
+      margin-left: 40px;
+      padding: 40px 20px;
+      border-radius: 10px;
+      box-sizing: border-box;
+
+      .item-content {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        padding: 6px 0 70px;
+        background: #ffffff;
+        box-sizing: border-box;
+
+        .item-img {
+          width: 546px;
+          margin: 27px auto 40px;
+          border-radius: 10px;
+          overflow: hidden;
+          >img {
+            width: 100%;
+          }
+        }
+
+        .item-name {
+          font-size: 34px;
+          color: #000000;
+          padding-left: 47px;
+        }
+
+        .item-text {
+          color: #162C56;
+          font-size: 24px;
+          padding: 10px 47px;
+        }
+
+        .item-tab {
+          width: 546px;
+          display: flex;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          background: #ffffff;
+          border-radius: 10px;
+
+          .tab {
+            flex: 1 1;
+            text-align: center;
+            padding: 32px;
+            font-size: 28px;
+            color: #999999;
+            position: relative;
+          }
+
+          .right-line::before {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 1px;
+            height: 100%;
+            background: #F7F8FD;
+          }
+        }
+      }
+    }
+  }
+}
+
+.carouser-tab {
+  position: relative;
+  width: 380px;
+  height: 40px;
+  display: flex;
+  margin-top: 80px;
+  margin-left: 60px;
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+
+  .tab-item {
+    flex: 1 1;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    font-size: 20px;
+    color: #D8D8D8;
+    position: relative;
+    z-index: 2;
+  }
+
+  .carouser-tab-slick {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    height: 40px;
+    background: #162C56;
+    border-radius: 10px;
+    transition: left .3s linear;
+  }
+}

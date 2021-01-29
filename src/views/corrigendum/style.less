@@ -1,0 +1,107 @@
+.corrigendum {
+  height: 100%;
+  background: #F7F8FD;
+  overflow: auto;
+  .exam-management-list{
+    margin: 30px auto;
+    width: 90%;
+    .list-item{
+        padding: 30px;
+        box-sizing: border-box;
+        background-color: #fff;
+        margin-bottom: 40px;
+        box-shadow: 0px 9px 26px 0px rgba(0, 0, 0, 0.1);
+        .list-item-title{
+            font-size: 34px;
+            font-weight: bold;
+            color: #000000;
+            margin-bottom: 30px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            position: relative;
+            .list-item-status{
+                font-size: 24px;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 20px;
+            }
+            .pending{
+                color: #BBBBBB;
+            }
+            .resolve{
+                color: #BBBBBB;
+                text-decoration:underline;
+            }
+            .reject{
+                color: #C55B00;
+                text-decoration:underline;
+
+            }
+        }
+        .list-item-box{
+            margin-bottom: 20px;
+            .list-item-count{
+                padding: 15px;
+                width: 60%;
+                border: 1px solid #D4D4D4;
+                border-radius: 5px;
+                box-sizing: border-box;
+            }
+            .list-item-number{
+                padding: 15px;
+                width: 35%;
+                border: 1px solid #D4D4D4;
+                border-radius: 5px;
+                box-sizing: border-box;
+            }
+            h5{
+                font-size: 24px;
+                color: #B8B8B8;
+                margin-bottom: 17px;
+            }
+            span{
+                font-size: 26px;
+                color: #4D4D4D;
+            }
+        }
+        .list-item-info{
+            padding: 15px;
+            border: 1px solid #D4D4D4;
+            border-radius: 5px;
+            box-sizing: border-box;
+            margin-bottom: 33px;
+            .list-item-info-container{
+                border-bottom: 1px solid #D4D4D4;
+                padding-bottom: 15px;
+            }
+            .list-item-info-box{
+                width: 50%;
+            }
+            h5{
+                font-size: 24px;
+                color: #B8B8B8;
+                margin-bottom: 17px;
+            }
+            span{
+                font-size: 26px;
+                color: #4D4D4D;
+            }
+            .list-item-info-num{
+                margin-top: 10px;
+            }
+        }
+        .list-item-button{
+            button{
+                width: 200px;
+                height: 50px;
+                border-radius: 25px;
+                border: 1px solid #162C56;
+                font-size: 32px;
+                color: #162C56;
+            }
+        }
+    }
+}
+}

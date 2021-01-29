@@ -1,0 +1,115 @@
+.order {
+  height: 100%;
+  background: #F7F8FD;
+  padding-top: 20px;
+  overflow: auto;
+  .order-list-item {
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 20px;
+    .order-list-header {
+      display: flex;
+      justify-content: space-between;
+      width: 90%;
+      margin: 0 auto;
+      padding: 20px 0;
+      h3,p,.order-status {
+        font-family: PingFangSC-Medium, PingFang SC;
+        line-height: 48px;
+        font-weight: 400;
+      }
+      h3 {
+        max-width: 40%;
+        height: 48px;
+        font-size: 34px;
+        font-weight: 600;
+        color: #000000;
+        white-space: nowrap;
+        overflow:hidden;
+        text-overflow:ellipsis;
+      }
+      p {
+        width: 229px;
+        height: 42px;
+        font-size: 30px;
+        color: #4D4D4D;
+      }
+      .order-status {
+        max-width: 20%;
+        font-size: 24px;
+        color: #C55B00;
+        text-align: end;
+      }
+    }
+    .order-list-content {
+      border-top: 1px solid #F2F2F2;
+      border-bottom: 1px solid #F2F2F2;
+      h3 {
+        width: 90%;
+        margin: 20px auto;
+        font-size: 28px;
+        font-weight: 400;
+        color: #B8B8B8;
+      }
+      .order-detail-list {
+        width: 90%;
+        margin: 10px auto;
+        display: flex;
+        justify-content: space-between;
+        color: #4D4D4D;
+        p {
+          font-size: 28px;
+          font-weight: 400;
+        }
+        .detail-price {
+          text-align: end;
+        }
+      }
+      .detail-footer {
+        width: 90%;
+        margin: 20px auto;
+        text-align: end;
+        font-size: 28px;
+        color: #4D4D4D;
+        span {
+          color: #162C56;
+        }
+      }
+    }
+    .order-list-footer {
+      width: 90%;
+      margin: 0 auto;
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-between;
+      .countdown {
+        position: relative;
+        padding-left: 45px;
+        width: 50%;
+        color: #162C56;
+        font-weight: 500;
+        font-size: 28px;
+      }
+      .countdown:before {
+        content:"";
+        background:url("../../assets/image/countdown.jpg") no-repeat;
+        background-size: 43px 42px;
+        width: 46px;
+        height: 43px;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+      }
+      .pay-btn {
+        width: 200px;
+        height: 50px;
+        border-radius: 25px;
+        border: 1px solid #162C56;
+        font-size: 32px;
+        font-weight: 400;
+        color: #162C56;
+        text-align: center;
+      }
+    }
+  }
+} 
