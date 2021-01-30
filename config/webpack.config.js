@@ -120,7 +120,7 @@ module.exports = function (webpackEnv) {
           ident: 'postcss',
           plugins: () => [
             require('postcss-flexbugs-fixes'),
-            require('postcss-px2rem-exclude')({ remUnit: 100, exclude: /node_modules/i }),
+            require('postcss-px2rem-exclude')({ remUnit: 100, exclude: /node_modules|picker/i }),
             require('postcss-preset-env')({
               autoprefixer: {
                 flexbox: 'no-2009',

@@ -28,6 +28,7 @@ const Pay = lazy(() => import('@/views/pay'));
 const About = lazy(() => import('@/views/setting/components/about'));
 const Preference = lazy(() => import('@/views/setting/components/preference'))
 const Order = lazy(() => import('@/views/order'));
+const Picker = lazy(() => import('@/components/picker'));
 const NotFind = lazy(() => import('@/views/not_find'));
 
 interface meta {
@@ -220,6 +221,13 @@ const routeConfig: configItem[] = [
         component: Order,
         meta: {
             title: '订单'
+        }
+    },
+    {
+        path: '/picker',
+        component: Picker,
+        meta: {
+            title: 'picker 选择器'
         }
     },
     {

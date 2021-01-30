@@ -1,0 +1,78 @@
+.picker-wrapper{
+    height: 100%;
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    transform: translateZ(1px);
+    background-color: rgba(0, 0, 0, 0.4);
+    flex-direction: column;
+    .picker-box{
+        width: 100%;
+        background-color: #fff;
+        .picker-header{
+            height: 45px;
+            border-bottom: 1PX solid #ddd;
+            button{
+                height: 100%;
+                padding: 0 20px;
+                color: #108ee9;
+                font-size: 18px;
+            }
+            h2{
+                font-size: 19px;
+            }
+        }
+        .picker-content{
+            display: block;
+            position: relative;
+            height: 238px;
+            overflow: hidden;
+            width: 100%;
+            .picker-content-item{
+                width: 100%;
+                padding-top: 87px;
+                .item-target{
+                    width: 100%;
+                    border-bottom: 1PX solid #ddd;
+                    border-top: 1PX solid #ddd;
+                    height: 30px;
+                    position: absolute;
+                    top: 100px;
+                    left: 0;
+                }
+                    .item-layer{
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        z-index: 3;
+                        height: 100%;
+                        background-image: linear-gradient(360deg, hsla(0,0%,100%,.95),hsla(0,0%,100%,.6)), linear-gradient(0, hsla(0,0%,100%,.95),hsla(0,0%,100%,.6));
+                        background-position: top, bottom;
+                        background-size: 100% 99px, 100% 106px;
+                        background-repeat: no-repeat;
+                      
+                    }
+                    .item-list{
+                        transform: translate3d(0, 0, 0);
+                        li{
+                            height: 30px;
+                            text-align: center;
+                            line-height: 60px;
+                            font-size: 16px;
+                            color: #000;
+                        }
+                        .action{
+                            font-size: 17px;
+                            color: red;
+                        }
+                    }
+                    
+            }
+        }
+    }
+}
